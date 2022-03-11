@@ -104,21 +104,55 @@ class Rectangle extends Shape {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 =============================
 Overloading
+	Same method with different parameters(no of parameters and type of parameters)
+	
+	Compiler takes care about method overloading.
 
+	If count of parameters is same, then type of parameters should be changed. 
+
+	You can write overloading methods inside the same class, or in derived class.
+	
+	It is static polymarphism.
+	
+	
+	
+	public class Calculator {
+		public int add(int n1, int n2) { // 2 parameters
+			return n1 + n2;
+		}
+		
+		public int add(int n1, int n2, int n3) { // 3 parameters
+			return n1 + n2 + n3;
+		}
+		
+		public double add(double n1, double n2) { // 2 			
+									parameters , type is double
+		return n1 + n2;
+	}
+		
+		p.v.s.m(..) {
+			Calculator c1 = new Calculator();
+			
+			s.o.p("Sum = " + c1.add(10,20));
+			s.o.p("Sum = " + c1.add(10,20,30));
+		}
+	}
+	
+	
+	
 Overriding
+	If the method with same parameters, again if you write in derived class, then it is called overriding a method.
+	
+	Use  @Override to specify that you are overriding a method.
+	
+	Method in base class only you can override in derived class.
+	
+	It is dynamic polymarphism.
+	
+
+
 
 
 ===============================
