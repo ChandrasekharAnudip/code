@@ -1,0 +1,147 @@
+Encaptulation
+	Mixture of fields and methods.
+	
+	Data Binding
+	
+	
+	
+	class
+		fields
+		methods
+
+class Account {
+	private int acc_id;
+	private String name;
+	
+	public void setAccountID(int acc_id) {
+		this.acc_id = acc_id;
+	}
+	
+	
+}
+
+
+balance = 10000;
+amount = 14000;
+
+balance = balance - amount;
+
+balance = 10000 - 14000
+        = -4000
+
+Abstraction
+	We know there is something.
+	We dont know what is that?
+
+1. abstract  classes === > 0%  to 100% abstraction
+
+	1. abstract method ==> the method without the body.
+	
+	2. if a class is defined with atleast one abstract method, that class can be called as an abstract class.
+	
+	3. We should not create any object for an abstract class. 
+	
+	4. Abstract class must be a base class.
+	
+	5. There must be atleast one derived class for an abstract class.
+	
+	6. In derived class(es) we must overide the abstract method(s) of the abstract class.
+	
+	
+	
+
+2. interfaces ===> 100% abstraction
+
+
+
+sh1.draw();
+
+public abstract class Shape {
+	.
+	.
+	.
+	.
+	
+	public abstract void area();
+	
+	public void hello() {
+		s.o.p("Hello");
+	}
+
+}
+
+
+Shape s = new Shape(); ==> this is an error because we cannot create object for abstract class.
+
+s.hello();
+
+s.area(); 
+
+class Circle extends Shape {
+
+	.
+	.
+	.
+	.
+	
+	@Overide
+	public void area() {
+		double area = Math.PI * r * r;
+	}
+}
+
+class Rectangle extends Shape {
+
+	.
+	.
+	.
+	.
+	
+	@Overide
+	public void area() {
+		double area = l * w;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================
+Overloading
+
+Overriding
+
+
+===============================
+
+Use of this keyword
+
+Use of super keyword
+
+Static Binding
+
+Dynamic Binding
+
+=======================
+
+
+Boxing and un-boxing
+
+
+Garbage Collection and Finalize
+
+Finalize
+
+Difference between final, finally and finalize
+
+======================================================
+
